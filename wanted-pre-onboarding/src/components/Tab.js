@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 const NavBar = styled.nav`
@@ -6,38 +6,36 @@ const NavBar = styled.nav`
   justify-content: center;
   text-align: center;
   height: 36px;
-  border-bottom: solid 1px darkgray;
-  
 `;
 
 const NavBtn = styled.button`
   flex: 1 1 40%;
-  margin: auto;
   font-size: 18px;
   cursor: pointer;
   border: 0;
   background-color: transparent;
   padding: 0;
-  margin: auto;
-  margin-bottom: 0;
+  border-bottom: solid 1px #ccc;
   
-  :focus {
-    width: 100%;
-    border-bottom: 1px solid black;
+  :focus{
+    border-bottom: solid 2px darkturquoise;
   }
 `;
 
 
 
-
-
 const Tab = () => {
+    const [tab, setTab] =useState(0);
+    const ItemList = ['감자', '고구마', '카레라이스'];
+
     return(
         <>
             <NavBar>
-                <NavBtn>감자</NavBtn>
-                <NavBtn>고구마</NavBtn>
-                <NavBtn>카레라이스</NavBtn>
+                {ItemList.map( (value, index) => {
+                    return(
+                        <NavBtn>{value}</NavBtn>
+                    )
+                })}
             </NavBar>
         </>
     )

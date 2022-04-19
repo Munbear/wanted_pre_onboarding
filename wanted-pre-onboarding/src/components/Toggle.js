@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -17,64 +17,51 @@ const BtnContainer = styled.nav`
 
 const BasicBtn = styled.div`
   width: 100%;
+  height: 36px;
   cursor: pointer;
-  height: 30px;
   
   button{
-    width: 100%;
-    border: none;
-    border-radius: 30px;
-    background-color: lightgray;
-  }
-  button:focus {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
     cursor: pointer;
-    border: none;
-    background-color: aqua;
-    border: none;
-    
-  }
-`;
-
-
-const DetailBtn = styled.div`
-  width: 100%;
-  height: 30px;
-  cursor: pointer;
-  
-  button{
     width: 100%;
     border: none;
-    border-radius: 30px;
-    background-color: lightgray;
+    background: transparent;
+    font-size: 18px;
+    margin: 7px;
   }
+  
   button:focus{
-    width: 100%;
-    height: 100%;
+    width: 90%;
     border-radius: 30px;
-    cursor: pointer;
-    border: none;
-    background-color: aqua;
-    border: none;
+    background-color: darkturquoise;
   }
 `;
 
 const Toggle = () => {
+    const [toggle, setToggle] = useState(0);
+    const BtnItems = ['기본','상세'];
     return(
         <Wrapper>
             <BtnContainer>
-                <BasicBtn>
-                    <button>기본</button>
-                </BasicBtn>
-                <DetailBtn>
-                    <button>상세</button>
-                </DetailBtn>
+                {BtnItems.map((items,index) => {
+                    return(
+                        <>
+                            <BasicBtn>
+                                <button>{items}</button>
+                            </BasicBtn>
+                        </>
+                    )
+                })}
             </BtnContainer>
         </Wrapper>
 
     )
 }
+
+// <BasicBtn>
+//     <button>{item}</button>
+// </BasicBtn>
+// <DetailBtn>
+//     <button>{item}</button>
+// </DetailBtn>
 
 export default Toggle;
