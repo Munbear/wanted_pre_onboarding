@@ -12,16 +12,16 @@ const BtnContainer = styled.nav`
   display: flex;
   justify-content: center;
   width: 350px;
-  height: 100%;
   border-radius: 30px;
 `;
 
 const BasicBtn = styled.div`
   width: 100%;
   cursor: pointer;
+  height: 30px;
+  
   button{
     width: 100%;
-    height: 100%;
     border: none;
     border-radius: 30px;
     background-color: lightgray;
@@ -41,11 +41,11 @@ const BasicBtn = styled.div`
 
 const DetailBtn = styled.div`
   width: 100%;
+  height: 30px;
   cursor: pointer;
   
   button{
     width: 100%;
-    height: 100%;
     border: none;
     border-radius: 30px;
     background-color: lightgray;

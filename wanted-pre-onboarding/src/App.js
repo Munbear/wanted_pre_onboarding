@@ -1,6 +1,6 @@
 import './App.css';
-import Toggle from './Toggle';
-import Tab from './Tab';
+import Tab from './components/Toggle';
+import Toggle from './components/Tab';
 
 function App() {
   return (
