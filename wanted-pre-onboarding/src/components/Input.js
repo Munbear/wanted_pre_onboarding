@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import { AiOutlineCheckCircle as Box } from 'react-icons/ai';
+import { AiFillCheckCircle as Box } from 'react-icons/ai';
+
 
 const InputSection = styled.div`
   display: flex;
@@ -15,6 +16,12 @@ const EmailBox  = styled.div`
   InputEmail{
     width: 200px;
     height: 30px;
+  }
+  
+  .box {
+    position: absolute;
+    right: 794px;
+    top: 198px;
   }
 `;
 
@@ -81,7 +88,7 @@ const Input = () => {
                     <InputEmail type='email' onChange={ e => {
                         checkEmail(e.target.value)
                     }} placeholder='Email'/>
-                    <Box style={
+                    <Box className='box' style={
                         {color:`${color}`}
                     }/>
                 </EmailBox>

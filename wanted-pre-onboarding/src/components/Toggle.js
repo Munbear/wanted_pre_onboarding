@@ -34,6 +34,15 @@ const BasicBtn = styled.div`
     border-radius: 30px;
     background-color: darkturquoise;
   }
+  
+  div {
+    width: 90px;
+    height: 36px;
+    background-color: orange;
+    border-radius: 30px;
+  }
+  
+  
 `;
 
 const Toggle = () => {
@@ -51,6 +60,7 @@ const Toggle = () => {
                         </>
                     )
                 })}
+                <div></div>
             </BtnContainer>
         </Wrapper>
 
