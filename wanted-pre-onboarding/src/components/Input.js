@@ -19,9 +19,10 @@ const EmailBox  = styled.div`
   }
   
   .box {
+    padding-left: 4px;
     position: absolute;
-    right: 794px;
-    top: 198px;
+    right: 800px;
+    top: 230px;
   }
 `;
 
@@ -41,11 +42,15 @@ const PasswordInput = styled.input`
 
 const PasswordCheckBoxWrap = styled.div`
   button{
+    cursor: pointer;
     width: 14px;
     height: 14px;
     position: absolute;
-    top: 253px;
-    left: 984px;
+    top: 285px;
+    left: 978px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
   }
 `;
 
