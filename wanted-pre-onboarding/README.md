@@ -1,70 +1,21 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Toggle
+![toggle](https://user-images.githubusercontent.com/54834533/164958414-80eeff72-3ba5-4a23-a5a5-7cc4d6864850.gif)
+ - useState에 boolean 값을 주어 값이 true일때와 false일때 하얀 div박스를 움직이게 구현 했습니다.  
+### 구현하면서 어려웠던 점
+- transform transition 등 css에 대한 이해도가 낮아 구현시 스타일에 대한 어려움이 있었습니다. 
+---
+# Tab 
+![tab](https://user-images.githubusercontent.com/54834533/164959056-fe21b348-e453-411c-a494-cbd3efe0d9bd.gif)
+- toggle 기능과 비슷하게 구현을 했습니다. toggle과 다르게 3개의 다른 값이 필요해 boolean 타입을 이용하는것보다 Number타입을 이용해 number 값이 변할때마다 pointer에 스타일링을 해줬습니다.
+### 구현하면서 어려웠던점 
+- react를 처음 배울때 tab 기능을 만들어 본적이 있어서 딱히 어려운 점은 없었지만 역시 css 이해도가 낮아 스타일링을 할때 어려움이 있었습니다. 
+---
+# Slider
+![slider](https://user-images.githubusercontent.com/54834533/164959245-8e8e2d37-c4c2-41a7-828e-23d85d133ce8.gif)
+- 버튼을 눌렀을대 버튼에 맞는 값이 보여지도록 구현했습니다. 
+### 구현하면서 어려웠던점 
+- Slider 기능을 만들때가 가장 어려움이 많았습니다. slider바 안에 마우스 포인터 값을 넣고 버튼이 움직일때마다 나오는 값을 보여주게 하고 싶었지만 아쉽게도 기간안에 구현에 실패하였습니다. 
+---
+# Input
+- useState에 boolean타입을 지정해주고 정규식을 사용해 email형식이 들어오면 true값을 내어주고 값이 true이면 color를 blue로 바뀌게 스타일링을 해줬습니다. 
+- 같은 방식으로 버튼을 눌렀을대 input type을 passoword에서 text로 바꿔 어떠한 값이 password로 작성하였는지 보여지게 만들었습니다. 
